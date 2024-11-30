@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import "../index.css"
 const Modal = ({ isOpen, data, onClose, onSave, title, fields = [] }) => {
   // Initialize form data: use `data` for editing or default empty values for new entries
   const [formData, setFormData] = useState(
@@ -46,7 +46,7 @@ const Modal = ({ isOpen, data, onClose, onSave, title, fields = [] }) => {
               />
             </div>
           ))}
-          <div className="flex justify-end">
+          <div className="justify-end">
             <button
               type="button"
               onClick={onClose}
