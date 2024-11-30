@@ -248,4 +248,28 @@ table {
       width: 100%;
     }
   }
-      
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .home-header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .home-description {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  

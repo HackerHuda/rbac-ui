@@ -1,5 +1,4 @@
 // Mock API simulation for roles and users
-
 const roles = [
     { id: 1, name: "Admin", permissions: ["Read", "Write", "Delete"] },
     { id: 2, name: "Editor", permissions: ["Read", "Write"] },
@@ -11,7 +10,7 @@ const roles = [
     { id: 2, name: "Fiza Khan", email: "Fiza@example.com", role: "Editor", status: "Inactive" },
   ];
   
-  // Helper function to simulate API delay
+ 
   const simulateDelay = (response) =>
     new Promise((resolve) => setTimeout(() => resolve(response), 500));
   

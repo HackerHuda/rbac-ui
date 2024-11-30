@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "../index.css"
 const Modal = ({ isOpen, data, onClose, onSave, title, fields = [] }) => {
-  // Initialize form data: use `data` for editing or default empty values for new entries
   const [formData, setFormData] = useState(
     data || fields.reduce((acc, field) => ({ ...acc, [field.name]: "" }), {})
   );
 
   useEffect(() => {
-    if (data) setFormData(data); // For editing existing data
+    if (data) setFormData(data);
   }, [data]);
 
   const handleChange = (e) => {
@@ -17,7 +16,7 @@ const Modal = ({ isOpen, data, onClose, onSave, title, fields = [] }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSave(formData); // Pass the form data to the parent component
+    onSave(formData);
   };
 
   if (!isOpen) return null;

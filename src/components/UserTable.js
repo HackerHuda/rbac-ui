@@ -117,7 +117,6 @@ const UsersTable = () => {
         </tbody>
       </table>
 
-      {/* Modal for adding/editing users */}
       {isModalOpen && (
         <Modal
           isOpen={isModalOpen}
