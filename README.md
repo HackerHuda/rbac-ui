@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# User and Roles Management Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a user and roles management dashboard built with React.js. It allows for managing users and roles in an intuitive and dynamic interface with features like add, edit, and delete functionalities.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Users Management**: View, add, edit, and delete users.
+- **Roles Management**: View, add, edit, and delete roles.
+- **Modals for Add/Edit Operations**: User and role creation or modification is done through interactive modals.
+- **CRUD Operations**: All data manipulations (Create, Read, Update, Delete) are available for users and roles.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Cloning the Repository
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To get started, clone the repository to your local machine:
 
-### `npm test`
+```bash
+git clone https://github.com/your-username/your-repository-name.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installing Dependencies
 
-### `npm run build`
+Navigate to the project directory and install the required dependencies using `npm`:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+cd your-repository-name
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The dependencies are:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React**: The core library for building the user interface.
+- **React Router DOM**: For routing between pages like users and roles.
+- **Tailwind CSS**: For utility-first styling and responsive layout.
+- **Axios**: For making HTTP requests (if you're interacting with a backend or mock APIs).
 
-### `npm run eject`
+### Running the Project
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Once the dependencies are installed, you can start the development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This will run the application locally, and you should be able to access it at [http://localhost:3000](http://localhost:3000).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Available Commands
 
-## Learn More
+- **`npm start`**: Starts the development server and opens the application in your browser.
+- **`npm run build`**: Builds the project for production, optimizing the assets.
+- **`npm test`**: Runs the test suite for the application (if tests are available).
+- **`npm run lint`**: Runs linting checks on the code to ensure code quality.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Here is an overview of the main folders and files:
 
-### Code Splitting
+- **src**: Contains the main source code for the project.
+  - **components**: Contains reusable components such as `UsersTable`, `RolesTable`, and `Modal`.
+  - **utils**: Contains utility functions for API requests like `getUsers`, `addUser`, `getRoles`, etc.
+  - **App.js**: The main component that renders the app and sets up routing.
+  - **index.js**: The entry point for the React application.
+  
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Users Management**: The users' table allows you to view users, and each user has actions for editing or deleting.
+2. **Roles Management**: Similarly, the roles' table shows the available roles, which you can edit or delete.
 
-### Analyzing the Bundle Size
+### Modal for Add/Edit Operations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- When adding or editing a user/role, a modal pops up to fill in the details such as name, email, permissions, etc.
+- The form data is validated, and upon submission, the data is sent to the backend API.
 
-### Making a Progressive Web App
+## Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The following dependencies are used in this project:
 
-### Advanced Configuration
+- **react**: "^18.2.0"
+- **react-dom**: "^18.2.0"
+- **react-router-dom**: "^6.6.1"
+- **axios**: "^1.3.4"
+- **tailwindcss**: "^3.3.0"
+- **postcss**: "^8.4.16"
+- **autoprefixer**: "^10.4.14"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+You can install all dependencies by running:
 
-### Deployment
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
